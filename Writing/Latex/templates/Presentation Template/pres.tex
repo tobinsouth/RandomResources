@@ -1,0 +1,81 @@
+\ifcase0  % choose 0=slides, 1=article, 2=refart
+   \documentclass[ignorenonframetext,12pt]{beamer}
+   \geometry{paper=a6paper,landscape}
+\or\documentclass[a4paper,11pt]{article}
+   \usepackage{url,beamerarticle}
+\or\documentclass[a4paper,11pt]{refart}
+   \let\example\relax
+   \usepackage{url,beamerarticle}
+\fi
+
+\ifcase2 % choose a theme like these
+   \usetheme{Goettingen}% I recommend
+\or\usetheme{Singapore}
+\or\usetheme{Boadilla}
+\or\usetheme{Pittsburgh}
+\or\usetheme{Madrid}
+\or\usetheme{Warsaw} % common choice, but often poor
+\fi
+
+% remove naviagtion symbols
+\setbeamertemplate{navigation symbols}{}
+
+\usepackage{graphicx,pgfplots,parskip}
+\usepackage{svg}
+
+%\usepackage[backend=biber]{biblatex}
+%\addbibresource{network.bib}
+
+
+
+\title[Network dynamics in Spotify]{ From Lil Wayne to Mozart, \\ Network dynamics in Spotify} 
+
+\author[Tobin South]{Tobin South}
+\date{June 2019}
+
+\institute[UofA]{
+The University of Adelaide, \\ 
+ ARC Centre of Excellence for Mathematical \& Statistical Frontiers (ACEMS) \\
+
+Supervisors:  Lewis Mitchell \& Matthew Roughan  
+
+}
+
+\date{\today}
+
+
+\begin{document}
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}
+\begin{center}
+
+Thanks for listening! \\
+\vspace{0.2in}
+Thanks  to: \\
+\vspace{0.1in}
+\includegraphics[height = 0.5in]{imgs/amsi_logo.png}
+\hspace{0.1in}
+\includegraphics[height = 0.5in]{imgs/uofa.png} 
+\hspace{0.1in}
+\includegraphics[height = 0.55in]{imgs/acems-logo.png}  
+\vspace{0.3in} 
+\\
+and my fantastic supervisors, \\ Matt Roughan and Lewis Mitchell
+
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{References}
+%\printbibliography
+\bibliographystyle{abbrv}
+\bibliography{network}
+\end{frame}
+
+
+\end{document}

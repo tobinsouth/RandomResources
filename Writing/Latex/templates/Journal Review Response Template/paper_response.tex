@@ -1,0 +1,401 @@
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage{tocloft}
+\usepackage{amsmath}
+\usepackage{txfonts}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{textpos}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+%\pdfpagewidth 8.5in
+%\pdfpageheight 11in
+
+\def \etal {{et~al.}}
+\def \lett #1{(\textbf{#1})}
+\def \Met {Methods}
+\def \SI {SI}
+
+% paper-specific macros:
+\def\rg{r_\mathrm{g}}
+\def\hone{h_1}
+   
+%\renewcommand{\thepage}{R-\arabic{page}}
+\renewcommand{\thefigure}{R\arabic{figure}}
+\renewcommand{\thesection}{R\arabic{section}}
+\renewcommand{\thetable}{R\arabic{table}}
+\renewcommand{\theequation}{R\arabic{equation}}
+\setlength{\parskip}{1.25ex} \setlength{\parindent}{0ex}
+
+\definecolor{MyGray}{rgb}{0.95,0.95,0.95}
+\definecolor{MyRed}{rgb}{1.0,0.8,0.8}
+\definecolor{darkgreen}{HTML}{00BB00}
+
+\newcommand{\note}[1]{{\color{green}\textbf{[[#1]]}}}
+\def\todo#1{{\color{red}\textbf{[TODO: #1]}}}
+\newcommand{\jpb}[1]{{\color{magenta}[[JPB: {#1}]]}}
+\newcommand{\lm}[1]{{\color{orange}[[LM: {#1}]]}}
+
+
+% use this for referee remarks we are working on
+\newcommand\q[1]{%
+	\begin{center}%
+		\fcolorbox{black}{MyRed}{%
+		\begin{minipage}{0.875\textwidth}%
+        \small
+			#1 
+		\end{minipage}%
+		} %
+	\end{center}%
+}
+
+% change \q to \qdone when a remark is finished being addressed.
+% (This is the final format for the submission.)
+\newcommand\qdone[1]{{%
+	\begin{center}%
+		\fcolorbox{black}{MyGray}{%
+		\begin{minipage}{0.875\textwidth}%
+            \small
+			#1 
+		\end{minipage}%
+		} %
+	\end{center}%
+	\vspace{-1.0ex}%
+}}
+
+
+\begin{document}
+
+\section*{Re: Manuscript ID NATHUMBEHAV-18064326}
+\thispagestyle{empty}
+
+\today
+
+Dear Dr.~Awesome and Referees,
+   
+Thank you for your comments and critiques. We have found your observations and
+suggestions relevant and deeply insightful, and have worked hard to improve the
+manuscript in response.  Our interpretation of the referee remarks places most
+comments into three broad categories:\\[-5ex]
+\begin{enumerate}\itemsep=0pt%
+    \item Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+    \item At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+    kasd gubergren, no sea takimata sanctus est.
+    \item Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+    dolore eu fugiat nulla pariatur.
+\end{enumerate}
+\vspace{-1.5ex}
+
+
+In response to these valuable comments, we have done lots of stuff xxx.
+%
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+amet.
+%New figures and discussions have been added to both the main text and supporting
+%information, and the manuscript has been carefully edited.  
+
+With these changes, we believe the manuscript is greatly strengthened. We thank
+the Referees for their constructive comments and hope you will find the
+revised paper suitable for publication.
+
+Please find attached a detailed list of changes and a point-by-point discussion
+of the referee remarks.
+
+Thank you all very much, we look forward to hearing from you.
+\vspace{1.5ex}
+
+%\includegraphics[]{sign.pdf}\\
+Alice, John and Jim
+\clearpage 
+
+
+
+\section*{Response to reviewers}\label{sec:listofchanges}
+
+Our primary changes to the main and supporting text have been to add more
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+amet.
+%
+Specifically, we have:
+\vspace{-2ex}
+\begin{itemize}
+    \itemsep=0pt
+    \item Addressed concern. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+    voluptua. 
+    \item At vero eos et accusam et justo duo dolores et ea rebum. Stet
+    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+    amet.
+    \item Figure 2C has been made more awesome.
+    \item Added the important results to Fig.~1D.
+\end{itemize}
+\vspace{-1.5ex}
+Additional changes:
+\vspace{-2ex}
+\begin{itemize}
+    \itemsep=0pt
+    \item Figures have been tweaked to better conform to Awesome Journal guidelines.
+    \item Updated newly published references and acknowledgements.
+\end{itemize}
+\vspace{-1.5ex}
+
+
+\section*{Point-by-point discussion}\label{sec:discussion}
+
+The Referees presented us with excellent, insightful comments and we are grateful
+for their efforts. We feel that the changes implemented as a consequence of
+his or her feedback have significantly strengthened the manuscript, thank you.
+Here we offer further discussion, quoting the original referee remarks for
+convenience.
+
+\subsubsection*{Response to Reviewer \#2}
+
+
+\qdone{(1) Framing. Throughout the paper, the authors discuss the concept "information". In the paper, the authors exclusively discuss "information" in an information-theoretical sense. 
+
+The information-theoretical meaning of "information" refers to what we can know given a very specific situation related to communication. This kind of "information" relates to a statistical distribution over the probability of some set of symbols. Loosely speaking: if I send someone a symbol, how many yes/no questions will they need to ask me to figure out which symbol I sent. The number of questions is the number of bits of "information" in my message. (I'm writing this from memory, so if details are wrong, please feel free to correct me). Let's call this meaning "information1".
+
+It is not so clear to me what information1 says about text. In the SI the authors note that text produced by James Joyce has an entropy of 7.06 bits, whereas Hemmingway's texts are characterized by 5.87 bits. Given figure 1b, the twitter users are typically in the 6.25-7.25 range. The fact that we can compare randomly selected twitter users to literary giants and find similar numbers, shows that information1 is more related to information about data compression and text-statistics than about the human-perceived content of some piece of text. 
+
+Where I see some danger is that there is another more colloquial meaning of "information" which refers to the what one might call the facts of a statement. If I state that "the cat left the room", it is meaningful to say that I am providing "information" about a cat and a room an their relation to each another. This sense of the word is what I suspect most potential readers of the manuscript associate with "information". Let's call this more colloquial sense of the word, "information2".
+
+My main problem with the current version of the manuscript is that these two meanings of "information" which are quite distinct seem to be conflated. This may or may not be intentional, but I think the conflation may be confusing to a non-information-theory-expert reader. All of the results in the paper are about information1, but - while the authors are careful not to explicitly refer to cases of information2, to my eyes, they often seem to subtly suggest information2. There are many examples of this throughout the MS, so just to give one, consider the discussion where the authors write: "... and even manipulate information exposure [34]", citing Pariser's filter bubble book. The filter bubble book is definitely about information2, but mentioned in the context of results about information1.
+
+If a reader thinks the paper's results are about information2, they would misunderstand the significance of the results.
+}
+
+\lm{I think the action is just to be quite obvious about the distinction between information1 and information2 very early on in the paper. But it's a bit tough to see exactly where is an obvious place to insert this discussion in the Intro, because, you know, it's well-written and pretty clear (to me) that we only ever talk about information1.}
+
+
+\lm{Refer back to Shannon here? ``The fundamental problem of communication is that of reproducing at one point either exactly or approximately a message selected at another point. Frequently the messages have meaning; that is they refer to or are correlated according to some system with certain physical or conceptual entities. These semantic aspects of communication are irrelevant to the engineering problem. The significant aspect is that the actual message is one selected from a set of possible messages. The system must be designed to operate for each possible selection, not just the one which will actually be chosen since this is unknown at the time of design.''}
+
+
+\q{(2) Predictability vs upper-bound-on-predictability. There is another item related to framing that might confuse some readers. Throughout the manuscript the authors talk quite a bit about predictability. In fact, however, the authors never make any prediction. 
+
+The numbers in the manuscript refer to an upper bound. How well an ideal algorithm would be able to predict the next information-theoretical symbol. As the authors note, this bound on predictability has been used within the study of human mobility (see main text, ref 25). In that realm, however, when researchers have attempted to make actual predictions using state-of-the-art algorithms, they have been very far from the estimated upper bound. My guess is that the same would be the case for predicting the next word in a sequence of test.
+
+In my opinion, the authors should be much more clear and explicit about the fact that they're operating with a theoretical upper bound and not actually predicting any content.
+}
+
+Have added the sentence: ``We emphasize that \emph{predictability} as defined here is distinct from \emph{prediction}, in that it does not actually make predictions about future text.'' at the end of the ``Predictability of written'' text section.
+
+
+\q{(3) Timing. In a number of places (p2, p5) the authors talk about "timings" of messages. This might be a problem with my understanding of the work, but I don't see how the approach takes into account the precise timing of each message. Doesn't the algorithm just operate on sequences of words? If not, I was not able to pick up how from the text. The authors might want to clarify.
+}
+
+\q{p2. "In this work we unify the two primary approaches". I don't think that is correct. It might be true that the authors propose a method that includes BOTH content and timing, but that is not the same as unifying the primary approaches.
+}
+
+\q{p3. "The ability to accurately profile and predict individuals is reflected in the predictability of their written text." I disagree. Firstly, there are the language/framing issues mentioned above. Secondly, it is something different (and much easier) to predict text on Twitter than predicting an individual in general (in fact I'm not even sure what the latter even means).
+}
+
+
+\q{p9. "This may have distinct implications for privacy: if an individual forgoes using a social media platform or deletes her account, yet her social ties remain, then that platform owner potentially possesses 95.1\% ± 3.36\% of the achievable predictive accuracy of the future activities of that individual." My question here is "so what"? Given the discussion above of the meaning of predictability vs upper bound for predictability, and information1 vs information2, what is it concretely that someone can know from alters? Especially because the upper bound of predictability from alters is relatively low to begin with. (Looks like it may lower than Hemingway's texts.) For me to take this statement really seriously, I would like an example like this to provide something more concrete. Another way of stating this is: because the predictability is purely theoretical the reader has very little context for what "X\% predictability" even means
+}
+
+\q{p10. "3-4 hours worth of text". How many tweets does this interval correspond to in the sample? What is the variability?
+}
+
+\q{p12. "social tie". What constitutes a social tie on twitter? How is it related to follower/following/retweeted/replied, etc.
+}
+
+\lm{Definition in fact appears on p. 15 in the ``Data collection and filtering'' section in Methods. Worth noting anything here about correlations between following/RT'ing? We didn't actually collect this data.}
+
+\qdone{p15. "50-500 followers" is still quiete a range. It would be interesting to see if there were systematic differences if one looked an narrower bands of followers (not a request for changes, but rather something for another paper).
+}
+
+Indeed! This is in fact a direction we intend to pursue in future research.
+
+
+\subsubsection*{Response to Reviewer \#3}
+
+\q{The result about the amount of information contained by alters if an ego would leave is very intriguing and opens new research possibilities in the field. While I think this result is promising, there is a caveat: If a user leaves Twitter, the behavior of its alters will likely change (e.g. not having conversations with the alter), possibly affecting the predictive power of alter information about the future activities of the ego. While this should not affect short-range predictions in the matters of hours studied in the article, the behavior of alters and egos can diverge over time and impact that kind of predictability in a medium time horizon. I think this uncertainty deserves at least one comment in the article to delimit the generalizability of that result.
+}
+
+\lm{This is presumably referring to the 95.1\% achievable predictive accuracy point on pg. 9, if a user forgoes or deletes her account. Short comment in para 1 of discussion perhaps?}
+
+
+\q{The methods used in the article and their assumptions are valid and acceptable. The rules to filter out users, for example excluding bots and other kinds of outliers, increase the robustness of results. Nevertheless, the authors must note a sampling bias in the way they sampled users. Egos were sampled through their tweets in a 10\% random tweet sample, which has a bias in which more active users are more likely to be sampled. While I do not think this is a threat to the validity of results, the authors should mention this.}
+
+\q{In addition, while the core methods of the article are very convincing, there are some statistical details that need to be reported in the SI, in particular, the statistical analysis that supports the results of Fig 2B and Fig 3 and the model that quantifies the 23\% effect mentioned at the end of page 11.
+}
+
+
+\qdone{The motivation and research overview are both concise and informative. I nevertheless miss references to two recent but very relevant developments on privacy questions in Twitter. The first one (Writer Profiling Without the Writer's Text. David Jurgens, Yulia Tsvetkov, and Dan Jurafsky, SocInfo 2017) shows how personal attributes of the bio of Twitter users can be predicted by using only text written by the friends of that user. The second one (Collective aspects of privacy in the Twitter social network. David Garcia, Mansi Goel, Amod Agrawal, Ponnurangam Kumaraguru, EPJ Data Science 2018) shows the inference of the location of Twitter users using only the data of friends who created a Twitter account before the predicted user. Mentioning these two articles would help the reader to see the wider scientific context of this article and its position in the forefront of research about privacy.
+}
+
+We have cited these two papers.
+
+
+\qdone{The data collection section is very detailed, including links to tools and resources, but the subsection on information measures lacks detail on which software was used to quantify information metrics. If the authors used any package or software in that part they should report it, or otherwise state that they implemented themselves the various procedures used in the article.
+}
+
+We have added a statement saying that we implemented each of the entropy measures ourselves in Python.
+
+
+% \bibliographystyle{naturemag}
+% \singlespacing \small
+% \bibliography{paper}
+
+\end{document}
+
+
+
+PASTE the original comments (typically emailed) here:
+
+From: <maryelizabeth.sutherland@us.nature.com>
+Subject: Decision on Nature Human Behaviour manuscript NATHUMBEHAV-18064326
+Date: August 1, 2018 at 12:59:42 EDT
+To: <james.bagrow@uvm.edu>
+Reply-To: <maryelizabeth.sutherland@us.nature.com>
+
+1st August 2018 
+
+
+Dear Prof Bagrow, 
+
+Thank you once again for submitting your manuscript, entitled "Information flow reveals prediction limits in online social activity" to Nature Human Behaviour and for your patience during the peer review process. 
+
+Your manuscript has now been evaluated by 3 reviewers, whose comments are included at the end of this letter. Although the reviewers find your work to be of interest, they also raise some important concerns about the way information is defined, the potential impact of a user leaving twitter on the predictions, and the potential influence of sampling bias. We are very interested in the possibility of publishing your study in Nature Human Behaviour, but would like to consider your response to these concerns in the form of a revised manuscript before we make a decision on publication.
+
+To guide the scope of the revisions, the editors discuss the referee reports in detail within the team, including with the chief editor, with a view to (1) identifying key priorities that should be addressed in revision and (2) overruling referee requests that are deemed beyond the scope of the current study. In this case, while we appreciate Reviewer 1's comments, we share Reviewer 2 and 3's view regarding the contribution this work makes to the literature and so would like to invite you to revise and resubmit your manuscript, taking into consideration the following:
+
+1. Clearly defining information and framing the manuscript within this definition (see Reviewer 2's comments)
+
+2. Discussing the caveats raised by Reviewer 3, namely the potential impact on the alters' behaviour when a user leaves twitter and the fact that active users are more likely to be sampled.
+
+We are committed to providing a fair and constructive peer-review process. Do not hesitate to contact us if there are specific requests from the reviewers that you believe are technically impossible or unlikely to yield a meaningful outcome.
+
+When revising your manuscript:
+
+* Include a “Response to reviewers” document detailing, point-by-point, how you addressed each referee comment. If no action was taken to address a point, you must provide a compelling argument. This response will be sent back to the reviewers along with the revised manuscript.
+
+* Please highlight all changes in the manuscript text file and indicate where they have been made (or copy and past them) in the point-by-point response. 
+
+* If you have not done so already please begin to revise your manuscript so that it conforms to our Letter format instructions at http://www.nature.com/nathumbehav/info/final-submission. Refer also to any guidelines provided in this letter.
+
+* Include a revised version of your reporting summary:
+
+Reporting summary: https://www.nature.com/authors/policies/ReportingSummary.pdf 
+
+Please note: because of the advanced features used in these forms, you must use Adobe Reader to open the documents and fill them out.
+
+These summaries will be available to referees (and, potentially, statisticians) to aid in their evaluation if the manuscript goes back for peer review. Revised reporting summaries are essential for re-review of the paper.
+
+
+Please use the link below to submit your revised manuscript and related files: 
+
+http://mts-nathumbehav.nature.com/cgi-bin/main.plex?el=A2Co7sG2A5LUR4J2A9ftdVYUZnw2QihyfoDPA7pAZ 
+
+Note: This URL links to your confidential home page and associated information about manuscripts you may have submitted, or that you are reviewing for us. If you wish to forward this email to co-authors, please delete the link to your homepage. 
+
+We hope to receive your revised manuscript within four to eight weeks. If you cannot send it within this time, please let us know. We will be happy to consider your revision so long as nothing similar has been accepted for publication at Nature Human Behaviour or published elsewhere. 
+
+Please do not hesitate to contact me if you have any questions or would like to discuss these revisions further.
+
+Nature Human Behaviour is committed to improving transparency in authorship. As part of our efforts in this direction, we are now requesting that all authors identified as ‘corresponding author’ on published papers create and link their Open Researcher and Contributor Identifier (ORCID) with their account on the Manuscript Tracking System (MTS), prior to acceptance. This applies to primary research papers only. ORCID helps the scientific community achieve unambiguous attribution of all scholarly contributions. You can create and link your ORCID from the home page of the MTS by clicking on ‘Modify my Springer Nature account’. For more information please visit please visit www.springernature.com/orcid.
+
+We look forward to seeing the revised manuscript and thank you for the opportunity to review your work.
+
+Sincerely, 
+
+Mary Elizabeth 
+
+Mary Elizabeth Sutherland
+Editor
+Nature Human Behaviour
+
+
+
+Reviewer expertise:
+
+Reviewer #1: information diffusion
+
+Reviewer #2: complex networks, information flow
+
+Reviewer #3: twitter, privacy
+
+
+Reviewers' Comments: 
+
+Reviewer #1:
+Remarks to the Author:
+The authors consider the problem of privacy in social networks, and the possibility to predict some features of an individual based on the features of his contacts. This question has attracted much attention in recent times, and has also been studied in scientific studies, such as in [5], but also un-cited works, e.g. https://arxiv.org/abs/1803.09007
+This contribution is fairly technical and involves a number of related tools to predict limits of predictability in a Twitter dataset. Overall, the results are fairly expected, due to the importance of assortativity in social networks. Nonetheless, the application of the methods in this context appear to be novel, but my recommendation would be to resubmit this manuscript to a more specialised journal.
+
+
+
+Reviewer #2:
+Remarks to the Author:
+"Information flow reveals prediction limits in online social activity" is a well written and interesting manuscript. The authors study the information content that Twitter users and their connections produce and compare various properties of these streams. 
+
+Overall, I find this to be an interesting piece of work, with worthwhile and thought-provoking findings. The underlying statistics, data analysis, etc, are thorough and sound. Before I can recommend publication, however, I do have a few items that I would like the authors to address.
+
+Major issue.
+
+(1) Framing. Throughout the paper, the authors discuss the concept "information". In the paper, the authors exclusively discuss "information" in an information-theoretical sense. 
+
+The information-theoretical meaning of "information" refers to what we can know given a very specific situation related to communication. This kind of "information" relates to a statistical distribution over the probability of some set of symbols. Loosely speaking: if I send someone a symbol, how many yes/no questions will they need to ask me to figure out which symbol I sent. The number of questions is the number of bits of "information" in my message. (I'm writing this from memory, so if details are wrong, please feel free to correct me). Let's call this meaning "information1".
+
+It is not so clear to me what information1 says about text. In the SI the authors note that text produced by James Joyce has an entropy of 7.06 bits, whereas Hemmingway's texts are characterized by 5.87 bits. Given figure 1b, the twitter users are typically in the 6.25-7.25 range. The fact that we can compare randomly selected twitter users to literary giants and find similar numbers, shows that information1 is more related to information about data compression and text-statistics than about the human-perceived content of some piece of text. 
+
+Where I see some danger is that there is another more colloquial meaning of "information" which refers to the what one might call the facts of a statement. If I state that "the cat left the room", it is meaningful to say that I am providing "information" about a cat and a room an their relation to each another. This sense of the word is what I suspect most potential readers of the manuscript associate with "information". Let's call this more colloquial sense of the word, "information2".
+
+My main problem with the current version of the manuscript is that these two meanings of "information" which are quite distinct seem to be conflated. This may or may not be intentional, but I think the conflation may be confusing to a non-information-theory-expert reader. All of the results in the paper are about information1, but - while the authors are careful not to explicitly refer to cases of information2, to my eyes, they often seem to subtly suggest information2. There are many examples of this throughout the MS, so just to give one, consider the discussion where the authors write: "... and even manipulate information exposure [34]", citing Pariser's filter bubble book. The filter bubble book is definitely about information2, but mentioned in the context of results about information1.
+
+If a reader thinks the paper's results are about information2, they would misunderstand the significance of the results.
+
+(2) Predictability vs upper-bound-on-predictability. There is another item related to framing that might confuse some readers. Throughout the manuscript the authors talk quite a bit about predictability. In fact, however, the authors never make any prediction. 
+
+The numbers in the manuscript refer to an upper bound. How well an ideal algorithm would be able to predict the next information-theoretical symbol. As the authors note, this bound on predictability has been used within the study of human mobility (see main text, ref 25). In that realm, however, when researchers have attempted to make actual predictions using state-of-the-art algorithms, they have been very far from the estimated upper bound. My guess is that the same would be the case for predicting the next word in a sequence of test.
+
+In my opinion, the authors should be much more clear and explicit about the fact that they're operating with a theoretical upper bound and not actually predicting any content.
+
+(3) Timing. In a number of places (p2, p5) the authors talk about "timings" of messages. This might be a problem with my understanding of the work, but I don't see how the approach takes into account the precise timing of each message. Doesn't the algorithm just operate on sequences of words? If not, I was not able to pick up how from the text. The authors might want to clarify.
+
+
+In addition to these larger issues, I have a number of smaller and more specific comments.
+
+p2. "In this work we unify the two primary approaches". I don't think that is correct. It might be true that the authors propose a method that includes BOTH content and timing, but that is not the same as unifying the primary approaches.
+
+p3. "The ability to accurately profile and predict individuals is reflected in the predictability of their written text." I disagree. Firstly, there are the language/framing issues mentioned above. Secondly, it is something different (and much easier) to predict text on Twitter than predicting an individual in general (in fact I'm not even sure what the latter even means).
+
+p9. "This may have distinct implications for privacy: if an individual forgoes using a social media platform or deletes her account, yet her social ties remain, then that platform owner potentially possesses 95.1% ± 3.36% of the achievable predictive accuracy of the future activities of that individual." My question here is "so what"? Given the discussion above of the meaning of predictability vs upper bound for predictability, and information1 vs information2, what is it concretely that someone can know from alters? Especially because the upper bound of predictability from alters is relatively low to begin with. (Looks like it may lower than Hemingway's texts.) For me to take this statement really seriously, I would like an example like this to provide something more concrete. Another way of stating this is: because the predictability is purely theoretical the reader has very little context for what "X% predictability" even means
+
+p10. "3-4 hours worth of text". How many tweets does this interval correspond to in the sample? What is the variability?
+
+p12. "social tie". What constitutes a social tie on twitter? How is it related to follower/following/retweeted/replied, etc.
+
+p15. "50-500 followers" is still quiete a range. It would be interesting to see if there were systematic differences if one looked an narrower bands of followers (not a request for changes, but rather something for another paper).
+
+In summary, I find this to be thorough and very interesting work, which says something new and deep about how the language of human beings is correlated when people know one another. The authors perform a careful analysis, which also takes into account subtle temporal effects related to this real-world behavior. 
+
+As explained above, however, I think that the current framing (intentionally or not) appears to me to conflate two distinct meanings of the work "information". In my opinion, this lack of clarity weakens the paper. I think the paper would be improved if the authors spent time explaining more plainly what their results mean (e.g. carefully discussing what information1 says and does not say about a piece of text; how information1 is distinct from information2), as well as being candid about the distinction between actual ability to predict, versus bounds on predictability.
+
+
+
+Reviewer #3:
+Remarks to the Author:
+This article presents a very interesting, robust, and thought-provoking analysis of the predictability of Twitter user activity based on the text produced by social contacts. The results of this article have substantial policy relevance: The information that is analyzed is the content of future posts of users, which clearly falls under the category of personal data by the current EU General Data Protection Regulation.
+
+The authors apply standard information metrics to quantify information flow through the temporal ordering of tweets. Note that this is one of the few articles that mention information flow and actually measures it in terms of bits, rather than arguing about retweets or other kinds of soft information metrics. In this sense, I think this article deserves attention and can raise the standards of social media data analysis.
+
+The result about the amount of information contained by alters if an ego would leave is very intriguing and opens new research possibilities in the field. While I think this result is promising, there is a caveat: If a user leaves Twitter, the behavior of its alters will likely change (e.g. not having conversations with the alter), possibly affecting the predictive power of alter information about the future activities of the ego. While this should not affect short-range predictions in the matters of hours studied in the article, the behavior of alters and egos can diverge over time and impact that kind of predictability in a medium time horizon. I think this uncertainty deserves at least one comment in the article to delimit the generalizability of that result.
+
+The methods used in the article and their assumptions are valid and acceptable. The rules to filter out users, for example excluding bots and other kinds of outliers, increase the robustness of results. Nevertheless, the authors must note a sampling bias in the way they sampled users. Egos were sampled through their tweets in a 10% random tweet sample, which has a bias in which more active users are more likely to be sampled. While I do not think this is a threat to the validity of results, the authors should mention this. In addition, while the core methods of the article are very convincing, there are some statistical details that need to be reported in the SI, in particular, the statistical analysis that supports the results of Fig 2B and Fig 3 and the model that quantifies the 23% effect mentioned at the end of page 11.
+
+The motivation and research overview are both concise and informative. I nevertheless miss references to two recent but very relevant developments on privacy questions in Twitter. The first one (Writer Profiling Without the Writer's Text. David Jurgens, Yulia Tsvetkov, and Dan Jurafsky, SocInfo 2017) shows how personal attributes of the bio of Twitter users can be predicted by using only text written by the friends of that user. The second one (Collective aspects of privacy in the Twitter social network. David Garcia, Mansi Goel, Amod Agrawal, Ponnurangam Kumaraguru, EPJ Data Science 2018) shows the inference of the location of Twitter users using only the data of friends who created a Twitter account before the predicted user. Mentioning these two articles would help the reader to see the wider scientific context of this article and its position in the forefront of research about privacy.
+
+The data collection section is very detailed, including links to tools and resources, but the subsection on information measures lacks detail on which software was used to quantify information metrics. If the authors used any package or software in that part they should report it, or otherwise state that they implemented themselves the various procedures used in the article.
+
+To sum up, I want to stress that I think this is an excellent article with robust and impactful results. I firmly believe that the authors can easily take my above comments into account in a revision of the article.
+
+
+
+

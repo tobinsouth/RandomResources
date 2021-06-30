@@ -1,0 +1,134 @@
+% bagrow.sty
+% Created by Jim Bagrow
+% Last Modified: 2016-09-07
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{bagrow}[2016/09/07 Bagrow's preprint package]
+
+
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{amsthm}
+\RequirePackage{graphicx}
+
+\@ifpackageloaded{xcolor}{}{
+\RequirePackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\RequirePackage{fullpage}
+\RequirePackage{setspace}
+\RequirePackage[leftmargin=0em,rightmargin=3em]{quoting}
+%\RequirePackage{txfonts}
+\RequirePackage[]{newtxtext}
+\RequirePackage[bigdelims]{newtxmath}
+\RequirePackage{authblk}
+\RequirePackage[colorlinks=true,urlcolor=blue,linkcolor=blue,citecolor=blue,pagebackref=true]{hyperref}	
+\RequirePackage[font=small]{caption}
+\RequirePackage{booktabs}
+	}
+%\ifdefined\dropcap
+%\else
+%\fi
+
+
+
+\newcommand{\todo}[1]{}
+\renewcommand{\todo}[1]{{\color{red}[[TODO: {#1}]]}}
+\newcommand\lett[1]{(\textbf{#1})}
+\newcommand{\bfit}[1]{\textbf{\textit{#1}}} % as in, really beef it up!
+
+\newcommand\jpb[1]{{\color{MediumBlue}[[JPB:#1]]}}
+
+
+\@ifpackageloaded{authblk}{
+\usepackage[scaled]{helvet}
+\newcommand*{\myfont}{\fontfamily{phv}\selectfont}
+\renewcommand\Authfont{\myfont}
+\renewcommand\Affilfont{\myfont}
+\renewcommand\Affilfont{\small}
+}{}
+
+
+
+\ifdefined\dropcap
+\else
+\renewenvironment{abstract}
+{\begin{quoting}%
+\onehalfspacing%
+\noindent\textbf{Abstract~~} %
+}
+{ 
+\end{quoting}
+}
+\fi
+
+
+\@ifundefined{acknowledgments}
+{%
+    \newenvironment{acknowledgments}
+    {\bigskip%
+    \begin{onehalfspace}%
+    \noindent\textbf{Acknowledgments~~}%
+    }
+    {\end{onehalfspace}}
+}
+{}%
+
+
+
+
+
+\@ifundefined{myfont}
+{}
+{
+\makeatletter
+% patch \maketitle so that it doesn't center
+\patchcmd{\@maketitle}{center}{flushleft}{}{}
+\patchcmd{\@maketitle}{center}{flushleft}{}{}
+% patch \maketitle so that the font size for the title is normal
+%\patchcmd{\@maketitle}{\LARGE}{\normalsize}{}{}
+
+% patch the patch by authblk so that the author block is flush left
+\def\maketitle{{\singlespacing%
+  \renewenvironment{tabular}[2][]
+    {\begin{flushleft}}
+    {\end{flushleft}}
+    \myfont
+  \AB@maketitle}}
+\makeatother
+}
+
+\makeatletter
+\@ifundefined{dropcap}
+{\doublespacing
+}
+{}
+\makeatother
+
+
+
+\newcommand{\corrauthinfo}[2]{%
+Corresponding author. Email: \href{mailto:#1}{#1}, %
+Homepage: \href{http://#2}{#2}
+}
+
+
+
+% in case we want to swap from bagrow to pnas, let's include dummy versions of PNAS-specific 
+% commands.
+\makeatletter
+\@ifundefined{dropcap}{%
+\newcommand{\dropcap}[1]{#1}%
+}{}
+\makeatother
+
+
+\providecommand{\keywords}[1]{\noindent \textbf{\textit{Keywords---}} #1}
+
+%\AtBeginDocument{\raggedright}
+
+
+
+
+
+
+
+

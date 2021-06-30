@@ -1,0 +1,73 @@
+% A style file for pdfLaTeX to implement UoA-like posters.
+\typeout{mathsPoster.sty by Tony Roberts, 14 Oct 2016}
+% Use with the following start, then standard good LaTeX thereafter 
+%\ifcase0 % 0=a4 drafting,  1=portrait,  2=landscape
+%   \documentclass[12pt,a4paper]{article}\def\nCols{1}
+%\or\documentclass[a0,portrait]{a0poster}\def\nCols{2}
+%\or\documentclass[a0,landscape]{a0poster}\def\nCols{4}
+%\fi
+%\usepackage{mathsPoster} 
+
+% need multiple columns of text side-by-side
+\usepackage{multicol} 
+% for including graphics, essential for logo and footer
+\usepackage{graphicx} 
+% do not number any sections
+\setcounter{secnumdepth}{0}
+
+% Require a \maketitle 
+% If required, set multi-column parameters and begin multicols
+\let\ms@maketitle\maketitle
+\def\maketitle{\ms@maketitle 
+    \ifnum\nCols>1%
+      \columnsep=100pt \columnseprule=3pt %
+      \begin{multicols}{\nCols}%
+      \fi}
+\let\ms@enddocument\enddocument
+\def\enddocument{\ifnum\nCols>1\end{multicols}\fi 
+    \ms@enddocument}
+
+% Increase space for UoA footer in one--two steps
+\ifdim\textwidth>30cm\addtolength{\textheight}{-2ex}\fi
+\ifdim\textwidth>84cm\addtolength{\textheight}{-2ex}\fi
+% Overwrite plain-pagestyle to get UoA footer,
+% footer image depends upon the width of poster
+\def\ps@plain{\let\@mkboth\@gobbletwo
+   \let\@oddhead\@empty%
+   \def\@oddfoot{\ifdim\textwidth<84cm%
+     \includegraphics[width=\linewidth]{1650-9_A0_Poster_Temp_Portrait_v2}
+     \else%
+     \includegraphics[width=\linewidth]{1650-9_A0_Poster_Temp_Portrait_313}
+     \fi}%
+   \let\@evenhead\@empty\let\@evenfoot\@oddfoot}
+
+% Redefine \@maketitle to produce UoA-like header:
+% UoA logo on the top-left, cunningly scaled;
+% left-align title, author and date info in larger than
+% normal sizes, unless the paperwidth is for drafting
+\def\@maketitle{%
+  \newpage \null \vskip 2em \noindent%
+  \begin{tabular}{@{}lp{0.75\textwidth}@{}}
+  \vtop{\null\hbox{% aligns the top of the logo
+  \includegraphics[width=0.22\textwidth, height=35ex, keepaspectratio]{UofA_logos}}}
+  &
+  \begin{flushleft}%
+    \ifdim\paperwidth<30cm \let\Huge\LARGE \let\huge\large \fi
+    \let \footnote \thanks
+    {\Huge \@title \par}%
+    \vskip 1.5em%
+    {\huge \lineskip .5em%
+     \begin{tabular}[t]{@{}l@{}}%
+        \@author
+     \end{tabular}\par}%
+    \vskip 1em%
+    {\large \@date}%
+  \end{flushleft}%
+  \end{tabular}
+  \par \vskip 1.5em}
+% redefine \and just in case people use it
+\def\and{\end{tabular}%
+  \hskip 1em \@plus.17fil%
+  \begin{tabular}[t]{@{}l@{}}}
+  
+\endinput
