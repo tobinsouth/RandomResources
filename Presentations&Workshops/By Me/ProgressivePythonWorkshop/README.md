@@ -1,0 +1,1 @@
+This is a simple workshop with a bunch of challenges designed to progress you through python tasks of increasing difficulty. Each task requires the answer from the previous task to progress. 
