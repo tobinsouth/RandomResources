@@ -1,7 +1,6 @@
 .DS_Store
 Cooking
 Writing/Latex/docs/*
-Other/coding_setup.md
 
 
 ## Core latex/pdflatex files:
@@ -29,3 +28,4 @@ Other/coding_setup.md
 *-blx.aux
 *-blx.bib
 *.run.xml
+*.dvi
