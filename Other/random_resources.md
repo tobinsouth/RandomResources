@@ -9,3 +9,5 @@ This is just a collection of links that I always lose and want to be able to fin
 * Thin Leather iPhone Cases https://www.olixar.com/genuine-leather-iphone-12-pro-case-black
 
 * OpenStreetMap city visualiser [anvaka.github.io/city-roads/](anvaka.github.io/city-roads/])
+
+* Open source and free Mac application to help you avoid distracting websites: [SelfControl](https://selfcontrolapp.com). Has a command line interface.
