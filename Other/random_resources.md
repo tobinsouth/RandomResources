@@ -5,8 +5,7 @@ This is just a collection of links that I always lose and want to be able to fin
 * Online version of photoshop for free [here](https://www.photopea.com/).
 * OnyX, Operating system utilities for macOS for free [here](https://www.titanium-software.fr/en/applications.html)
 * Thin Leather iPhone Cases https://www.olixar.com/genuine-leather-iphone-12-pro-case-black
-<<<<<<< HEAD
-* OpenStreetMap city visualiser [anvaka.github.io/city-roads/](anvaka.github.io/city-roads/])
+* OpenStreetMap city visualiser [anvaka.github.io/city-roads/](anvaka.github.io/city-roads/)
 * Convert anything to a native app [nativefier](https://github.com/nativefier/nativefier)
 * Select a colour palette for a figure [coolors](https://coolors.co/).
 * A list of technical tools [hiddentools.dev](https://hiddentools.dev/)
@@ -14,8 +13,4 @@ This is just a collection of links that I always lose and want to be able to fin
 * [Bibtex Tidy](https://flamingtempura.github.io/bibtex-tidy/)
 * [Betterbib](https://github.com/nschloe/betterbib) automatically fetches Crossref to update your `.bib` files.
 * [Programattic Diagrams](https://github.com/mermaid-js/mermaid/blob/develop/docs/Tutorials.md)
-=======
-
-* OpenStreetMap city visualiser [anvaka.github.io/city-roads/](anvaka.github.io/city-roads/])
-
 * Open source and free Mac application to help you avoid distracting websites: [SelfControl](https://selfcontrolapp.com). Has a command line interface.
