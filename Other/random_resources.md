@@ -15,3 +15,4 @@ This is just a collection of links that I always lose and want to be able to fin
 * [Programattic Diagrams](https://github.com/mermaid-js/mermaid/blob/develop/docs/Tutorials.md)
 * Open source and free Mac application to help you avoid distracting websites: [SelfControl](https://selfcontrolapp.com). Has a command line interface.
 * Maps of the internet. I've had a map of the internet the day I was born on my wall for many years. An original project was [here](https://web.archive.org/web/20060106055420/http://research.lumeta.com/ches/map/) but the best option is to use the [Opte Project](https://www.opte.org/the-internet) and you can see every days raw image [here](http://renderbot.nyc1.opte.org).
+* Open Source Alfred altenartive that's free, [Raycast](https://www.raycast.com)
