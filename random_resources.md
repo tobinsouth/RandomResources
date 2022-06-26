@@ -27,6 +27,7 @@ This is just a collection of links that I always lose and want to be able to fin
 * [Programattic Diagrams](https://github.com/mermaid-js/mermaid/blob/develop/docs/Tutorials.md)
 * Maps of the internet. I've had a map of the internet the day I was born on my wall for many years. An original project was [here](https://web.archive.org/web/20060106055420/http://research.lumeta.com/ches/map/) but the best option is to use the [Opte Project](https://www.opte.org/the-internet) and you can see every days raw image [here](http://renderbot.nyc1.opte.org).
 * A collection of graph viz of the internet since 1997 [http://renderbot.nyc1.opte.org/](http://renderbot.nyc1.opte.org/)
+* A [self editing html page for glossaries](https://glossary.page/template/)
 
 
 ### Tools for self learning and course development - great for new PhD students
