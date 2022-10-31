@@ -31,8 +31,6 @@ export PYTHONPATH=$HOME/python/Python-3.10.6.tgz
 Don't forget the `source ~/.bashrc_profile`
 
 
-```
-
 ```bash
 echo "export PATH=$HOME/.local/bin:$PATH" >> ~/.bashrc_profile
 ```
@@ -40,9 +38,6 @@ echo "export PATH=$HOME/.local/bin:$PATH" >> ~/.bashrc_profile
 
 
 If you get the ctypes issue then install libffi and remake
-```bash
-
-```
 
 
-```
+
