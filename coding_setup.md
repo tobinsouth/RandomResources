@@ -11,6 +11,7 @@ I've used a lot of different setups for data science and it changes all the time
 
 # Tech installs:
 ## oh-my-zsh
+```bash
 plugins=(
 	git
 	zsh-syntax-highlighting
@@ -20,6 +21,7 @@ plugins=(
 
 alias l='ls -Alhgo'
 alias G='grep -i'
+```
 
 # Python
 I'm sick of dealing with the whole of anaconda but also agree that conda can be somewhat useful. The current compromise is to use **miniforge** to install a conda python installation and use pip from then onwards.
